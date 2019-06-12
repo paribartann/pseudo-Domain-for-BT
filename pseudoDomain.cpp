@@ -5,9 +5,7 @@
 #include "pseudoDomain.h"
 
 using namespace std;
-//using namespace pseudo;
 
-//constructor
 pseudoDomain::pseudoDomain()
 {
     charge = 100;
@@ -25,7 +23,7 @@ bool pseudoDomain::not_carrying_packageTP()
 
 bool pseudoDomain::battery_low()
 {
-    if ( charge < 0.25*charge )
+    if ( charge < 25 )
         return true;
     else
         return false;
